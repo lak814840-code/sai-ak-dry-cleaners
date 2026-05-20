@@ -366,7 +366,7 @@
       </div>
       <div class="hero-badges">
         <div class="badge">
-          <div class="badge-num"> 21 +</div>
+          <div class="badge-num">21+</div>
           <div class="badge-label">Years of service</div>
         </div>
         <div class="badge">
@@ -428,7 +428,7 @@
   <section class="pricing" id="pricing">
     <div class="section-tag">Direct Web Booking</div>
     <h2 class="section-title" style="text-align: center; color: var(--white); margin-bottom: 10px;">Select Items & Place Order</h2>
-    <p class="section-sub" style="text-align: center; margin: 0 auto 40px;">Choose quantities below. Your layout bill updates live, ready to send instantly to WhatsApp.</p>
+    <p class="section-sub" style="text-align: center; margin: 0 auto 40px;">🎁 Special Offers Active: 10% Off First Order | ₹50 Off on ₹500 | ₹100 Off on ₹1000!</p>
     
     <div class="pricing-table">
       <div class="pricing-row header">
@@ -499,10 +499,24 @@
 
     <div id="order-summary-box" style="display: none; max-width: 700px; margin: 30px auto 0; background: rgba(255,255,255,0.08); padding: 24px; border-radius: 12px; border: 1px solid var(--gold); text-align: center;">
       <h3 style="color: var(--white); font-family: 'Playfair Display', serif; margin-bottom: 10px;">Your Order Summary</h3>
-      <p style="color: var(--gold-light); font-size: 1.2rem; font-weight: 500; margin-bottom: 20px;">Estimated Total: <span id="total-bill">₹0</span></p>
-      <a href="#" id="submit-web-order" target="_blank" class="btn-primary" style="text-decoration: none;">
-        🚀 Confirm & Place Order on WhatsApp
-      </a>
+      
+      <div style="color: rgba(255,255,255,0.85); margin: 20px auto; font-size: 1.05rem; text-align: left; max-width: 340px; background: rgba(0,0,0,0.2); padding: 16px; border-radius: 8px;">
+        <p style="margin-bottom: 6px;">Subtotal: <span id="bill-subtotal" style="float:right; color:var(--white);">₹0</span></p>
+        <p id="bill-discount-row" style="margin-bottom: 6px; color: #25D366; font-size: 0.95rem; display:none;"><span id="bill-discount-reason">Discount</span>: <span id="bill-discount-amount" style="float:right;">-₹0</span></p>
+        <hr style="border: 0; border-top: 1px solid rgba(255,255,255,0.15); margin: 10px 0;">
+        <p style="font-weight: bold; color: var(--gold-light); font-size: 1.25rem; margin-top: 4px;">Total Payable: <span id="bill-final" style="float:right;">₹0</span></p>
+      </div>
+
+      <p style="color: rgba(255,255,255,0.7); font-size: 0.9rem; margin-bottom: 20px;">Select a number to place your order via WhatsApp:</p>
+      
+      <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+        <a href="#" id="submit-web-order-1" target="_blank" class="btn-primary" style="text-decoration: none;">
+          📱 Order via No. 1 (9415174928)
+        </a>
+        <a href="#" id="submit-web-order-2" target="_blank" class="btn-primary" style="text-decoration: none;">
+          📱 Order via No. 2 (9935830928)
+        </a>
+      </div>
     </div>
     <p class="price-note">* Prices may vary slightly based on fabric condition. Final price confirmed at drop-off.</p>
   </section>
@@ -558,17 +572,17 @@
         <div class="contact-icon">📞</div>
         <div class="contact-text">
           <strong>Phone / WhatsApp</strong>
-          <span id="phone-display">"+91 9415174928","9935830928"</span>
+          <span id="phone-display">+91 9415174928 / +91 9935830928</span>
         </div>
       </div>
       <div class="contact-detail">
         <div class="contact-icon">🕐</div>
         <div class="contact-text">
           <strong>Hours</strong>
-          <span>Mon – Sun: 10 AM – 9 PM  |  Thursday Closed</span>
+          <span>Mon – Sun: 10 AM – 9 PM  |  Thursday Closed</span>
         </div>
       </div>
-      <a href="https://wa.me/91 9415174928, 9935830928?text=Hello%2C%20I%20want%20to%20enquire%20about%20your%20services" class="whatsapp-btn" id="wa-contact">
+      <a href="https://wa.me/919415174928?text=Hello%2C%20I%20want%20to%20enquire%20about%20your%20services" class="whatsapp-btn" id="wa-contact">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.121 1.532 5.855L.057 23.286a.75.75 0 0 0 .916.932l5.578-1.461A11.943 11.943 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.907 0-3.693-.498-5.243-1.369l-.374-.218-3.875 1.016 1.035-3.78-.238-.389A9.953 9.953 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
         Chat on WhatsApp
       </a>
@@ -608,19 +622,64 @@
         }
       });
 
-      messageText += `\n━━━━━━━━━━━━━━━\n💰 *Total Estimated Bill: ₹${totalBill}*`;
-
       const summaryBox = document.getElementById('order-summary-box');
-      const totalDisplay = document.getElementById('total-bill');
-      const orderBtn = document.getElementById('submit-web-order');
+      const subtotalDisplay = document.getElementById('bill-subtotal');
+      const discountRow = document.getElementById('bill-discount-row');
+      const discountReasonDisplay = document.getElementById('bill-discount-reason');
+      const discountAmountDisplay = document.getElementById('bill-discount-amount');
+      const finalDisplay = document.getElementById('bill-final');
+      
+      const orderBtn1 = document.getElementById('submit-web-order-1');
+      const orderBtn2 = document.getElementById('submit-web-order-2');
 
       if (hasItems) {
-        totalDisplay.innerText = `₹${totalBill}`;
+        // Automatic Discounts Logic Engine
+        let discount = 0;
+        let discountReason = "";
+
+        if (totalBill >= 1000) {
+          discount = 100;
+          discountReason = "Flat ₹100 Off (Order above ₹1000)";
+        } else if (totalBill >= 500) {
+          discount = 50;
+          discountReason = "Flat ₹50 Off (Order above ₹500)";
+        } else {
+          // Automatic 10% First Order discount for smaller values
+          discount = Math.round(totalBill * 0.1);
+          discountReason = "First Order 10% Discount";
+        }
+
+        let finalBill = totalBill - discount;
+
+        // Formating WhatsApp Text
+        let finalMessage = messageText;
+        finalMessage += `\n━━━━━━━━━━━━━━━\n`;
+        finalMessage += `💰 *Subtotal:* ₹${totalBill}\n`;
+        if (discount > 0) {
+          finalMessage += `🎁 *Discount (${discountReason}):* -₹${discount}\n`;
+        }
+        finalMessage += `⭐ *Total Payable Bill:* *₹${finalBill}*`;
+
+        // Update live screen display elements
+        subtotalDisplay.innerText = `₹${totalBill}`;
+        if (discount > 0) {
+          discountRow.style.display = 'block';
+          discountReasonDisplay.innerText = `🎁 ${discountReason}`;
+          discountAmountDisplay.innerText = `-₹${discount}`;
+        } else {
+          discountRow.style.display = 'none';
+        }
+        finalDisplay.innerText = `₹${finalBill}`;
+        
+        // Show box layout
         summaryBox.style.display = 'block';
         
-        // Note: Change '91XXXXXXXXXX' to your real business WhatsApp number
-        const whatsappNumber = "91 9415174928","9935830928"; 
-        orderBtn.href = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(messageText)}`;
+        // Clean dynamic links for numbers
+        const num1 = "919415174928"; 
+        const num2 = "919935830928"; 
+        
+        orderBtn1.href = `https://wa.me/${num1}?text=${encodeURIComponent(finalMessage)}`;
+        orderBtn2.href = `https://wa.me/${num2}?text=${encodeURIComponent(finalMessage)}`;
       } else {
         summaryBox.style.display = 'none';
       }
